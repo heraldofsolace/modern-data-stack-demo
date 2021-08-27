@@ -1,0 +1,24 @@
+[2021-08-26 06:35:59,726] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: trigger_airbyte_dbt_job.load_cases 2021-08-26T06:35:12.717172+00:00 [queued]>
+[2021-08-26 06:35:59,741] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: trigger_airbyte_dbt_job.load_cases 2021-08-26T06:35:12.717172+00:00 [queued]>
+[2021-08-26 06:35:59,741] {taskinstance.py:1094} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-26 06:35:59,741] {taskinstance.py:1095} INFO - Starting attempt 1 of 1
+[2021-08-26 06:35:59,741] {taskinstance.py:1096} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-26 06:35:59,751] {taskinstance.py:1114} INFO - Executing <Task(SimpleHttpOperator): load_cases> on 2021-08-26T06:35:12.717172+00:00
+[2021-08-26 06:35:59,757] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'trigger_airbyte_dbt_job', 'load_cases', '2021-08-26T06:35:12.717172+00:00', '--job-id', '11', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dag_airbyte_dbt.py', '--cfg-path', '/tmp/tmpe348ugfo', '--error-file', '/tmp/tmp_uudzohb']
+[2021-08-26 06:35:59,758] {standard_task_runner.py:77} INFO - Job 11: Subtask load_cases
+[2021-08-26 06:35:59,755] {standard_task_runner.py:52} INFO - Started process 3824 to run task
+[2021-08-26 06:35:59,794] {logging_mixin.py:109} INFO - Running <TaskInstance: trigger_airbyte_dbt_job.load_cases 2021-08-26T06:35:12.717172+00:00 [running]> on host bf40e4a9e66e
+[2021-08-26 06:35:59,838] {taskinstance.py:1253} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_airbyte_dbt_job
+AIRFLOW_CTX_TASK_ID=load_cases
+AIRFLOW_CTX_EXECUTION_DATE=2021-08-26T06:35:12.717172+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-08-26T06:35:12.717172+00:00
+[2021-08-26 06:35:59,839] {http.py:111} INFO - Calling HTTP method
+[2021-08-26 06:35:59,846] {base.py:79} INFO - Using connection to: id: dbt_api. Host: cloud.getdbt.com, Port: None, Schema: https, Login: , Password: None, extra: {}
+[2021-08-26 06:35:59,847] {http.py:140} INFO - Sending 'POST' to url: https://cloud.getdbt.com/api/v2/accounts/26118/jobs/33205/run/
+[2021-08-26 06:36:01,297] {taskinstance.py:1218} INFO - Marking task as SUCCESS. dag_id=trigger_airbyte_dbt_job, task_id=load_cases, execution_date=20210826T063512, start_date=20210826T063559, end_date=20210826T063601
+[2021-08-26 06:36:01,337] {local_task_job.py:151} INFO - Task exited with return code 0
+[2021-08-26 06:36:01,355] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check

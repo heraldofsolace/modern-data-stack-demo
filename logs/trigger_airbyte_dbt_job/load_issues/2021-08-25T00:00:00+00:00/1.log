@@ -1,0 +1,43 @@
+[2021-08-26 05:57:13,663] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: trigger_airbyte_dbt_job.load_issues 2021-08-25T00:00:00+00:00 [queued]>
+[2021-08-26 05:57:13,681] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: trigger_airbyte_dbt_job.load_issues 2021-08-25T00:00:00+00:00 [queued]>
+[2021-08-26 05:57:13,681] {taskinstance.py:1094} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-26 05:57:13,682] {taskinstance.py:1095} INFO - Starting attempt 1 of 1
+[2021-08-26 05:57:13,682] {taskinstance.py:1096} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-26 05:57:13,691] {taskinstance.py:1114} INFO - Executing <Task(SimpleHttpOperator): load_issues> on 2021-08-25T00:00:00+00:00
+[2021-08-26 05:57:13,695] {standard_task_runner.py:52} INFO - Started process 525 to run task
+[2021-08-26 05:57:13,699] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'trigger_airbyte_dbt_job', 'load_issues', '2021-08-25T00:00:00+00:00', '--job-id', '3', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dag_airbyte_dbt.py', '--cfg-path', '/tmp/tmpi2nyv7ly', '--error-file', '/tmp/tmp5dpph9sl']
+[2021-08-26 05:57:13,699] {standard_task_runner.py:77} INFO - Job 3: Subtask load_issues
+[2021-08-26 05:57:13,738] {logging_mixin.py:109} INFO - Running <TaskInstance: trigger_airbyte_dbt_job.load_issues 2021-08-25T00:00:00+00:00 [running]> on host bf40e4a9e66e
+[2021-08-26 05:57:13,784] {taskinstance.py:1253} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_airbyte_dbt_job
+AIRFLOW_CTX_TASK_ID=load_issues
+AIRFLOW_CTX_EXECUTION_DATE=2021-08-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2021-08-25T00:00:00+00:00
+[2021-08-26 05:57:13,784] {http.py:111} INFO - Calling HTTP method
+[2021-08-26 05:57:13,793] {base.py:79} INFO - Using connection to: id: dbt_api. Host: cloud.getdbt.com, Port: None, Schema: api/v2/, Login: None, Password: None, extra: {}
+[2021-08-26 05:57:13,795] {http.py:140} INFO - Sending 'POST' to url: api/v2/://cloud.getdbt.com/accounts/26118/jobs/33132/run/
+[2021-08-26 05:57:13,796] {taskinstance.py:1462} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1164, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1282, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1312, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/http/operators/http.py", line 113, in execute
+    response = http.run(self.endpoint, self.data, self.headers, self.extra_options)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/http/hooks/http.py", line 141, in run
+    return self.run_and_check(session, prepped_request, extra_options)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/http/hooks/http.py", line 195, in run_and_check
+    response = session.send(prepped_request, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 649, in send
+    adapter = self.get_adapter(url=request.url)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 742, in get_adapter
+    raise InvalidSchema("No connection adapters were found for {!r}".format(url))
+requests.exceptions.InvalidSchema: No connection adapters were found for 'api/v2/://cloud.getdbt.com/accounts/26118/jobs/33132/run/'
+[2021-08-26 05:57:13,798] {taskinstance.py:1512} INFO - Marking task as FAILED. dag_id=trigger_airbyte_dbt_job, task_id=load_issues, execution_date=20210825T000000, start_date=20210826T055713, end_date=20210826T055713
+[2021-08-26 05:57:13,832] {local_task_job.py:151} INFO - Task exited with return code 1
+[2021-08-26 05:57:13,851] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check

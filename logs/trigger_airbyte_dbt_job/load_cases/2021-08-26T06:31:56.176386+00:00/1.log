@@ -1,0 +1,52 @@
+[2021-08-26 06:32:58,866] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: trigger_airbyte_dbt_job.load_cases 2021-08-26T06:31:56.176386+00:00 [queued]>
+[2021-08-26 06:32:58,879] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: trigger_airbyte_dbt_job.load_cases 2021-08-26T06:31:56.176386+00:00 [queued]>
+[2021-08-26 06:32:58,880] {taskinstance.py:1094} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-26 06:32:58,880] {taskinstance.py:1095} INFO - Starting attempt 1 of 1
+[2021-08-26 06:32:58,880] {taskinstance.py:1096} INFO - 
+--------------------------------------------------------------------------------
+[2021-08-26 06:32:58,888] {taskinstance.py:1114} INFO - Executing <Task(SimpleHttpOperator): load_cases> on 2021-08-26T06:31:56.176386+00:00
+[2021-08-26 06:32:58,891] {standard_task_runner.py:52} INFO - Started process 3570 to run task
+[2021-08-26 06:32:58,894] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'trigger_airbyte_dbt_job', 'load_cases', '2021-08-26T06:31:56.176386+00:00', '--job-id', '9', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dag_airbyte_dbt.py', '--cfg-path', '/tmp/tmpngkmx3z6', '--error-file', '/tmp/tmphlqs2czz']
+[2021-08-26 06:32:58,894] {standard_task_runner.py:77} INFO - Job 9: Subtask load_cases
+[2021-08-26 06:32:58,932] {logging_mixin.py:109} INFO - Running <TaskInstance: trigger_airbyte_dbt_job.load_cases 2021-08-26T06:31:56.176386+00:00 [running]> on host bf40e4a9e66e
+[2021-08-26 06:32:58,981] {taskinstance.py:1253} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_airbyte_dbt_job
+AIRFLOW_CTX_TASK_ID=load_cases
+AIRFLOW_CTX_EXECUTION_DATE=2021-08-26T06:31:56.176386+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-08-26T06:31:56.176386+00:00
+[2021-08-26 06:32:58,981] {http.py:111} INFO - Calling HTTP method
+[2021-08-26 06:32:58,989] {base.py:79} INFO - Using connection to: id: dbt_api. Host: cloud.getdbt.com, Port: None, Schema: , Login: , Password: None, extra: {}
+[2021-08-26 06:32:58,991] {http.py:140} INFO - Sending 'POST' to url: http://cloud.getdbt.com/api/v2/accounts/26118/jobs/33205/run/
+[2021-08-26 06:33:01,576] {http.py:154} ERROR - HTTP error: Method Not Allowed
+[2021-08-26 06:33:01,576] {http.py:155} ERROR - {"detail":"Method \"GET\" not allowed."}
+[2021-08-26 06:33:01,583] {taskinstance.py:1462} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/http/hooks/http.py", line 152, in check_response
+    response.raise_for_status()
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/models.py", line 953, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 405 Client Error: Method Not Allowed for url: https://cloud.getdbt.com:443/api/v2/accounts/26118/jobs/33205/run/
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1164, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1282, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1312, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/http/operators/http.py", line 113, in execute
+    response = http.run(self.endpoint, self.data, self.headers, self.extra_options)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/http/hooks/http.py", line 141, in run
+    return self.run_and_check(session, prepped_request, extra_options)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/http/hooks/http.py", line 198, in run_and_check
+    self.check_response(response)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/http/hooks/http.py", line 156, in check_response
+    raise AirflowException(str(response.status_code) + ":" + response.reason)
+airflow.exceptions.AirflowException: 405:Method Not Allowed
+[2021-08-26 06:33:01,586] {taskinstance.py:1512} INFO - Marking task as FAILED. dag_id=trigger_airbyte_dbt_job, task_id=load_cases, execution_date=20210826T063156, start_date=20210826T063258, end_date=20210826T063301
+[2021-08-26 06:33:01,635] {local_task_job.py:151} INFO - Task exited with return code 1
+[2021-08-26 06:33:01,654] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check
