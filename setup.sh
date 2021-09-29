@@ -1,31 +1,22 @@
 #!/usr/bin/env bash
 up() {
-  trap 'kill $ABID; kill $AFID; kill $SSID; exit' INT
-  (
-      echo "Starting Airbyte..."
-      docker-compose -f docker-compose-airbyte.yaml down -v
-      docker-compose -f docker-compose-airbyte.yaml up -d
-  )&
-  ABID=$!
-  (
-      echo "Starting Airflow..."
-      docker-compose -f docker-compose-airflow.yaml down -v
-      mkdir -p ./dags ./logs ./plugins
-      echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" >> .env
-      docker-compose -f docker-compose-airflow.yaml up airflow-init
-      docker-compose -f docker-compose-airflow.yaml up -d
-  )&
-  AFID=$!
-  (
-      echo "Starting Superset..."
-      cd superset
-      docker-compose -f docker-compose-superset.yaml down -v
-      docker-compose -f docker-compose-superset.yaml up -d
-  )&
-  SSID=$!
+  echo "Starting Airbyte..."
+  docker-compose -f docker-compose-airbyte.yaml down -v
+  docker-compose -f docker-compose-airbyte.yaml up -d
 
-  echo "Waiting for applications to start..."
-  wait
+  echo "Starting Airflow..."
+  docker-compose -f docker-compose-airflow.yaml down -v
+  mkdir -p ./dags ./logs ./plugins
+  echo -e "AIRFLOW_UID=$(id -u)\nAIRFLOW_GID=0" >> .env
+  docker-compose -f docker-compose-airflow.yaml up airflow-init
+  docker-compose -f docker-compose-airflow.yaml up -d
+  
+  echo "Starting Superset..."
+  cd superset
+  docker-compose -f docker-compose-superset.yaml down -v
+  docker-compose -f docker-compose-superset.yaml up -d
+  cd ..
+
   echo "Access Airbyte at http://localhost:8000 and set up a connection."
   echo "Enter your Airbyte connection ID: "
   read connection_id

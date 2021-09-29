@@ -1,0 +1,468 @@
+[2021-09-29 05:45:19,466] {processor.py:162} INFO - Started process (PID=65) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:45:19,467] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:45:19,468] {logging_mixin.py:109} INFO - [2021-09-29 05:45:19,468] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:45:19,511] {logging_mixin.py:109} INFO - [2021-09-29 05:45:19,510] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:45:19,511] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:45:19,534] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.070 seconds
+[2021-09-29 05:46:13,742] {processor.py:162} INFO - Started process (PID=378) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:46:13,743] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:46:13,744] {logging_mixin.py:109} INFO - [2021-09-29 05:46:13,744] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:46:13,769] {logging_mixin.py:109} INFO - [2021-09-29 05:46:13,768] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:46:13,770] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:46:13,777] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.039 seconds
+[2021-09-29 05:46:44,304] {processor.py:162} INFO - Started process (PID=429) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:46:44,305] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:46:44,306] {logging_mixin.py:109} INFO - [2021-09-29 05:46:44,306] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:46:44,325] {logging_mixin.py:109} INFO - [2021-09-29 05:46:44,324] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:46:44,326] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:46:44,332] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.029 seconds
+[2021-09-29 05:47:14,922] {processor.py:162} INFO - Started process (PID=492) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:47:14,923] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:47:14,925] {logging_mixin.py:109} INFO - [2021-09-29 05:47:14,924] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:47:14,947] {logging_mixin.py:109} INFO - [2021-09-29 05:47:14,946] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:47:14,947] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:47:14,954] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.035 seconds
+[2021-09-29 05:47:45,260] {processor.py:162} INFO - Started process (PID=555) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:47:45,261] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:47:45,261] {logging_mixin.py:109} INFO - [2021-09-29 05:47:45,261] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:47:45,280] {logging_mixin.py:109} INFO - [2021-09-29 05:47:45,280] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:47:45,281] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:47:45,286] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.028 seconds
+[2021-09-29 05:48:15,714] {processor.py:162} INFO - Started process (PID=608) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:48:15,715] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:48:15,715] {logging_mixin.py:109} INFO - [2021-09-29 05:48:15,715] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:48:15,732] {logging_mixin.py:109} INFO - [2021-09-29 05:48:15,731] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:48:15,732] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:48:15,737] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.025 seconds
+[2021-09-29 05:48:46,044] {processor.py:162} INFO - Started process (PID=670) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:48:46,045] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:48:46,046] {logging_mixin.py:109} INFO - [2021-09-29 05:48:46,046] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:48:46,070] {logging_mixin.py:109} INFO - [2021-09-29 05:48:46,069] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:48:46,071] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:48:46,077] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.035 seconds
+[2021-09-29 05:49:16,421] {processor.py:162} INFO - Started process (PID=724) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:49:16,421] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:49:16,422] {logging_mixin.py:109} INFO - [2021-09-29 05:49:16,422] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:49:16,447] {logging_mixin.py:109} INFO - [2021-09-29 05:49:16,445] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:49:16,447] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:49:16,454] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.036 seconds
+[2021-09-29 05:49:46,879] {processor.py:162} INFO - Started process (PID=787) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:49:46,880] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:49:46,881] {logging_mixin.py:109} INFO - [2021-09-29 05:49:46,881] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:49:46,906] {logging_mixin.py:109} INFO - [2021-09-29 05:49:46,905] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:49:46,907] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:49:46,913] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.037 seconds
+[2021-09-29 05:53:29,900] {processor.py:162} INFO - Started process (PID=70) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:53:29,918] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:53:29,918] {logging_mixin.py:109} INFO - [2021-09-29 05:53:29,918] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:53:29,988] {logging_mixin.py:109} INFO - [2021-09-29 05:53:29,987] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:53:29,989] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:53:30,012] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.115 seconds
+[2021-09-29 05:54:22,938] {processor.py:162} INFO - Started process (PID=384) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:54:22,939] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:54:22,940] {logging_mixin.py:109} INFO - [2021-09-29 05:54:22,939] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:54:22,964] {logging_mixin.py:109} INFO - [2021-09-29 05:54:22,963] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:54:22,964] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:54:22,973] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.037 seconds
+[2021-09-29 05:54:53,631] {processor.py:162} INFO - Started process (PID=435) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:54:53,631] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:54:53,632] {logging_mixin.py:109} INFO - [2021-09-29 05:54:53,632] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:54:53,651] {logging_mixin.py:109} INFO - [2021-09-29 05:54:53,651] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:54:53,652] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:54:53,664] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.035 seconds
+[2021-09-29 05:55:23,989] {processor.py:162} INFO - Started process (PID=499) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:55:23,990] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:55:23,990] {logging_mixin.py:109} INFO - [2021-09-29 05:55:23,990] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:55:24,014] {logging_mixin.py:109} INFO - [2021-09-29 05:55:24,013] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:55:24,014] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:55:24,020] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.033 seconds
+[2021-09-29 05:55:54,363] {processor.py:162} INFO - Started process (PID=551) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:55:54,365] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:55:54,366] {logging_mixin.py:109} INFO - [2021-09-29 05:55:54,366] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:55:54,385] {logging_mixin.py:109} INFO - [2021-09-29 05:55:54,384] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:55:54,385] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:55:54,398] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.037 seconds
+[2021-09-29 05:56:24,711] {processor.py:162} INFO - Started process (PID=614) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:56:24,711] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:56:24,712] {logging_mixin.py:109} INFO - [2021-09-29 05:56:24,712] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:56:24,730] {logging_mixin.py:109} INFO - [2021-09-29 05:56:24,729] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:56:24,730] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:56:24,736] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.027 seconds
+[2021-09-29 05:59:30,737] {processor.py:162} INFO - Started process (PID=75) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:59:30,738] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 05:59:30,739] {logging_mixin.py:109} INFO - [2021-09-29 05:59:30,738] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:59:30,776] {logging_mixin.py:109} INFO - [2021-09-29 05:59:30,775] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 05:59:30,776] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 05:59:30,786] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.052 seconds
+[2021-09-29 06:00:20,849] {processor.py:162} INFO - Started process (PID=392) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:00:20,850] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:00:20,851] {logging_mixin.py:109} INFO - [2021-09-29 06:00:20,850] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:00:20,876] {logging_mixin.py:109} INFO - [2021-09-29 06:00:20,875] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 06:00:20,877] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:00:20,893] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.048 seconds
+[2021-09-29 06:00:51,438] {processor.py:162} INFO - Started process (PID=443) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:00:51,439] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:00:51,439] {logging_mixin.py:109} INFO - [2021-09-29 06:00:51,439] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:00:51,458] {logging_mixin.py:109} INFO - [2021-09-29 06:00:51,457] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 06:00:51,458] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:00:51,464] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.028 seconds
+[2021-09-29 06:01:22,202] {processor.py:162} INFO - Started process (PID=507) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:01:22,203] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:01:22,204] {logging_mixin.py:109} INFO - [2021-09-29 06:01:22,203] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:01:22,226] {logging_mixin.py:109} INFO - [2021-09-29 06:01:22,225] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 06:01:22,226] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:01:22,234] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.034 seconds
+[2021-09-29 06:01:52,511] {processor.py:162} INFO - Started process (PID=570) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:01:52,512] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:01:52,512] {logging_mixin.py:109} INFO - [2021-09-29 06:01:52,512] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:01:52,532] {logging_mixin.py:109} INFO - [2021-09-29 06:01:52,531] {dagbag.py:329} ERROR - Failed to import: /opt/airflow/dags/dag_airbyte_dbt.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/dag_airbyte_dbt.py", line 7, in <module>
+    airbyte_connection_id = Variable.get("AIRBYTE_CONNECTION_ID")
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/variable.py", line 140, in get
+    raise KeyError(f'Variable {key} does not exist')
+KeyError: 'Variable AIRBYTE_CONNECTION_ID does not exist'
+[2021-09-29 06:01:52,533] {processor.py:625} WARNING - No viable dags retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:01:52,539] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.030 seconds
+[2021-09-29 06:02:22,876] {processor.py:162} INFO - Started process (PID=623) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:02:22,877] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:02:22,878] {logging_mixin.py:109} INFO - [2021-09-29 06:02:22,877] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:02:22,908] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:02:25,436] {logging_mixin.py:109} INFO - [2021-09-29 06:02:25,435] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:02:25,449] {logging_mixin.py:109} INFO - [2021-09-29 06:02:25,447] {dag.py:1852} INFO - Creating ORM DAG for trigger_airbyte_dbt_job
+[2021-09-29 06:02:25,458] {logging_mixin.py:109} INFO - [2021-09-29 06:02:25,457] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-28 00:00:00+00:00
+[2021-09-29 06:02:25,471] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 2.597 seconds
+[2021-09-29 06:02:55,935] {processor.py:162} INFO - Started process (PID=702) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:02:55,936] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:02:55,936] {logging_mixin.py:109} INFO - [2021-09-29 06:02:55,936] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:02:55,963] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:02:55,978] {logging_mixin.py:109} INFO - [2021-09-29 06:02:55,978] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:02:55,998] {logging_mixin.py:109} INFO - [2021-09-29 06:02:55,998] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-28 00:00:00+00:00
+[2021-09-29 06:02:56,007] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.074 seconds
+[2021-09-29 06:03:26,426] {processor.py:162} INFO - Started process (PID=763) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:03:26,427] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:03:26,427] {logging_mixin.py:109} INFO - [2021-09-29 06:03:26,427] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:03:26,454] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:03:26,463] {logging_mixin.py:109} INFO - [2021-09-29 06:03:26,463] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:03:26,478] {logging_mixin.py:109} INFO - [2021-09-29 06:03:26,478] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-28 00:00:00+00:00
+[2021-09-29 06:03:26,493] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.069 seconds
+[2021-09-29 06:03:56,751] {processor.py:162} INFO - Started process (PID=818) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:03:56,752] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:03:56,752] {logging_mixin.py:109} INFO - [2021-09-29 06:03:56,752] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:03:56,782] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:03:56,794] {logging_mixin.py:109} INFO - [2021-09-29 06:03:56,794] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:03:56,815] {logging_mixin.py:109} INFO - [2021-09-29 06:03:56,815] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-28 00:00:00+00:00
+[2021-09-29 06:03:56,824] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.076 seconds
+[2021-09-29 06:04:27,348] {processor.py:162} INFO - Started process (PID=880) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:04:27,349] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:04:27,350] {logging_mixin.py:109} INFO - [2021-09-29 06:04:27,350] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:04:27,379] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:04:27,388] {logging_mixin.py:109} INFO - [2021-09-29 06:04:27,388] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:04:27,405] {logging_mixin.py:109} INFO - [2021-09-29 06:04:27,405] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-28 00:00:00+00:00
+[2021-09-29 06:04:27,416] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.070 seconds
+[2021-09-29 06:04:57,873] {processor.py:162} INFO - Started process (PID=932) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:04:57,874] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:04:57,874] {logging_mixin.py:109} INFO - [2021-09-29 06:04:57,874] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:04:57,907] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:04:57,919] {logging_mixin.py:109} INFO - [2021-09-29 06:04:57,919] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:04:57,944] {logging_mixin.py:109} INFO - [2021-09-29 06:04:57,944] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-28 00:00:00+00:00
+[2021-09-29 06:04:57,955] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.084 seconds
+[2021-09-29 06:05:28,571] {processor.py:162} INFO - Started process (PID=995) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:05:28,572] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:05:28,572] {logging_mixin.py:109} INFO - [2021-09-29 06:05:28,572] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:05:28,608] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:05:28,619] {logging_mixin.py:109} INFO - [2021-09-29 06:05:28,619] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:05:28,643] {logging_mixin.py:109} INFO - [2021-09-29 06:05:28,643] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-28 00:00:00+00:00
+[2021-09-29 06:05:28,653] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.084 seconds
+[2021-09-29 06:05:58,983] {processor.py:162} INFO - Started process (PID=1049) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:05:58,984] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:05:58,985] {logging_mixin.py:109} INFO - [2021-09-29 06:05:58,984] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:05:59,013] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:05:59,022] {logging_mixin.py:109} INFO - [2021-09-29 06:05:59,021] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:05:59,040] {logging_mixin.py:109} INFO - [2021-09-29 06:05:59,040] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-28 00:00:00+00:00
+[2021-09-29 06:05:59,049] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.068 seconds
+[2021-09-29 06:06:29,594] {processor.py:162} INFO - Started process (PID=1113) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:06:29,598] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:06:29,598] {logging_mixin.py:109} INFO - [2021-09-29 06:06:29,598] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:06:29,620] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:06:29,628] {logging_mixin.py:109} INFO - [2021-09-29 06:06:29,628] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:06:29,641] {logging_mixin.py:109} INFO - [2021-09-29 06:06:29,641] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:06:29,648] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.056 seconds
+[2021-09-29 06:06:59,842] {processor.py:162} INFO - Started process (PID=1174) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:06:59,842] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:06:59,843] {logging_mixin.py:109} INFO - [2021-09-29 06:06:59,843] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:06:59,874] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:06:59,886] {logging_mixin.py:109} INFO - [2021-09-29 06:06:59,886] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:06:59,906] {logging_mixin.py:109} INFO - [2021-09-29 06:06:59,906] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:06:59,914] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.074 seconds
+[2021-09-29 06:07:30,088] {processor.py:162} INFO - Started process (PID=1227) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:07:30,089] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:07:30,090] {logging_mixin.py:109} INFO - [2021-09-29 06:07:30,090] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:07:30,120] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:07:30,132] {logging_mixin.py:109} INFO - [2021-09-29 06:07:30,132] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:07:30,146] {logging_mixin.py:109} INFO - [2021-09-29 06:07:30,146] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:07:30,170] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.085 seconds
+[2021-09-29 06:08:00,193] {processor.py:162} INFO - Started process (PID=1290) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:08:00,194] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:08:00,195] {logging_mixin.py:109} INFO - [2021-09-29 06:08:00,195] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:08:00,225] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:08:00,235] {logging_mixin.py:109} INFO - [2021-09-29 06:08:00,235] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:08:00,252] {logging_mixin.py:109} INFO - [2021-09-29 06:08:00,252] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:08:00,260] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.071 seconds
+[2021-09-29 06:08:30,350] {processor.py:162} INFO - Started process (PID=1342) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:08:30,351] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:08:30,351] {logging_mixin.py:109} INFO - [2021-09-29 06:08:30,351] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:08:30,377] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:08:30,388] {logging_mixin.py:109} INFO - [2021-09-29 06:08:30,388] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:08:30,407] {logging_mixin.py:109} INFO - [2021-09-29 06:08:30,407] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:08:30,415] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.068 seconds
+[2021-09-29 06:09:00,727] {processor.py:162} INFO - Started process (PID=1404) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:09:00,728] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:09:00,728] {logging_mixin.py:109} INFO - [2021-09-29 06:09:00,728] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:09:00,755] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:09:00,764] {logging_mixin.py:109} INFO - [2021-09-29 06:09:00,764] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:09:00,778] {logging_mixin.py:109} INFO - [2021-09-29 06:09:00,778] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:09:00,787] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.062 seconds
+[2021-09-29 06:09:31,158] {processor.py:162} INFO - Started process (PID=1457) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:09:31,159] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:09:31,159] {logging_mixin.py:109} INFO - [2021-09-29 06:09:31,159] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:09:31,182] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:09:31,191] {logging_mixin.py:109} INFO - [2021-09-29 06:09:31,191] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:09:31,205] {logging_mixin.py:109} INFO - [2021-09-29 06:09:31,205] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:09:31,212] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.057 seconds
+[2021-09-29 06:10:01,290] {processor.py:162} INFO - Started process (PID=1520) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:10:01,291] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:10:01,292] {logging_mixin.py:109} INFO - [2021-09-29 06:10:01,291] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:10:01,323] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:10:01,337] {logging_mixin.py:109} INFO - [2021-09-29 06:10:01,337] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:10:01,359] {logging_mixin.py:109} INFO - [2021-09-29 06:10:01,359] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:10:01,373] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.085 seconds
+[2021-09-29 06:10:31,724] {processor.py:162} INFO - Started process (PID=1583) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:10:31,724] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:10:31,725] {logging_mixin.py:109} INFO - [2021-09-29 06:10:31,725] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:10:31,751] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:10:31,760] {logging_mixin.py:109} INFO - [2021-09-29 06:10:31,759] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:10:31,776] {logging_mixin.py:109} INFO - [2021-09-29 06:10:31,775] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:10:31,790] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.069 seconds
+[2021-09-29 06:11:02,012] {processor.py:162} INFO - Started process (PID=1635) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:11:02,012] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:11:02,013] {logging_mixin.py:109} INFO - [2021-09-29 06:11:02,013] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:11:02,035] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:11:02,043] {logging_mixin.py:109} INFO - [2021-09-29 06:11:02,043] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:11:02,057] {logging_mixin.py:109} INFO - [2021-09-29 06:11:02,057] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:11:02,065] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.055 seconds
+[2021-09-29 06:11:32,458] {processor.py:162} INFO - Started process (PID=1698) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:11:32,458] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:11:32,459] {logging_mixin.py:109} INFO - [2021-09-29 06:11:32,459] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:11:32,480] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:11:32,489] {logging_mixin.py:109} INFO - [2021-09-29 06:11:32,489] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:11:32,502] {logging_mixin.py:109} INFO - [2021-09-29 06:11:32,502] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:11:32,517] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.061 seconds
+[2021-09-29 06:12:02,646] {processor.py:162} INFO - Started process (PID=1750) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:12:02,647] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:12:02,647] {logging_mixin.py:109} INFO - [2021-09-29 06:12:02,647] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:12:02,670] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:12:02,678] {logging_mixin.py:109} INFO - [2021-09-29 06:12:02,678] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:12:02,691] {logging_mixin.py:109} INFO - [2021-09-29 06:12:02,691] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:12:02,705] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.062 seconds
+[2021-09-29 06:12:32,858] {processor.py:162} INFO - Started process (PID=1813) to work on /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:12:32,859] {processor.py:613} INFO - Processing file /opt/airflow/dags/dag_airbyte_dbt.py for tasks to queue
+[2021-09-29 06:12:32,859] {logging_mixin.py:109} INFO - [2021-09-29 06:12:32,859] {dagbag.py:496} INFO - Filling up the DagBag from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:12:32,881] {processor.py:623} INFO - DAG(s) dict_keys(['trigger_airbyte_dbt_job']) retrieved from /opt/airflow/dags/dag_airbyte_dbt.py
+[2021-09-29 06:12:32,890] {logging_mixin.py:109} INFO - [2021-09-29 06:12:32,890] {dag.py:1833} INFO - Sync 1 DAGs
+[2021-09-29 06:12:32,904] {logging_mixin.py:109} INFO - [2021-09-29 06:12:32,904] {dag.py:2306} INFO - Setting next_dagrun for trigger_airbyte_dbt_job to 2021-09-29 00:00:00+00:00
+[2021-09-29 06:12:32,919] {processor.py:170} INFO - Processing /opt/airflow/dags/dag_airbyte_dbt.py took 0.063 seconds
