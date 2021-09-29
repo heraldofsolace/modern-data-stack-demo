@@ -32,16 +32,6 @@ up() {
   # Set connection ID for DAG.
   docker-compose -f docker-compose-airflow.yaml run airflow-webserver airflow variables set 'AIRBYTE_CONNECTION_ID' "$connection_id"
   docker-compose -f docker-compose-airflow.yaml run airflow-webserver airflow connections add 'airbyte_example' --conn-uri 'airbyte://host.docker.internal:8000'
-  echo "Enter your DBT account ID"
-  read dbt_acc_id
-  echo "Enter your DBT job ID"
-  read dbt_job_id
-  echo "Enter your DBT API token"
-  read dbt_api_token
-  docker-compose -f docker-compose-airflow.yaml run airflow-webserver airflow variables set 'DBT_ACCOUNT_ID' "$dbt_acc_id"
-  docker-compose -f docker-compose-airflow.yaml run airflow-webserver airflow variables set 'DBT_JOB_ID' "$dbt_job_id"
-  docker-compose -f docker-compose-airflow.yaml run airflow-webserver airflow variables set 'DBT_API_TOKEN' "$dbt_api_token"
-  docker-compose -f docker-compose-airflow.yaml run airflow-webserver airflow connections add 'dbt_api' --conn-uri 'https://cloud.getdbt.com'
 
   echo "Access Airflow at http://localhost:8080 to kick off your Airbyte sync DAG."
   echo "Access Superset at http://localhost:8088 to set up your dashboards."

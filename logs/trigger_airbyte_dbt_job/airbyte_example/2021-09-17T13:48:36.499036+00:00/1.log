@@ -1,0 +1,90 @@
+[2021-09-17 13:49:13,968] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: trigger_airbyte_dbt_job.airbyte_example 2021-09-17T13:48:36.499036+00:00 [queued]>
+[2021-09-17 13:49:13,982] {taskinstance.py:903} INFO - Dependencies all met for <TaskInstance: trigger_airbyte_dbt_job.airbyte_example 2021-09-17T13:48:36.499036+00:00 [queued]>
+[2021-09-17 13:49:13,982] {taskinstance.py:1094} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-17 13:49:13,982] {taskinstance.py:1095} INFO - Starting attempt 1 of 1
+[2021-09-17 13:49:13,982] {taskinstance.py:1096} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-17 13:49:13,990] {taskinstance.py:1114} INFO - Executing <Task(AirbyteTriggerSyncOperator): airbyte_example> on 2021-09-17T13:48:36.499036+00:00
+[2021-09-17 13:49:13,998] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'trigger_airbyte_dbt_job', 'airbyte_example', '2021-09-17T13:48:36.499036+00:00', '--job-id', '2', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dag_airbyte_dbt.py', '--cfg-path', '/tmp/tmp9l2wu25r', '--error-file', '/tmp/tmpnlp4sq6a']
+[2021-09-17 13:49:13,994] {standard_task_runner.py:52} INFO - Started process 1689 to run task
+[2021-09-17 13:49:13,998] {standard_task_runner.py:77} INFO - Job 2: Subtask airbyte_example
+[2021-09-17 13:49:14,030] {logging_mixin.py:109} INFO - Running <TaskInstance: trigger_airbyte_dbt_job.airbyte_example 2021-09-17T13:48:36.499036+00:00 [running]> on host f6015fc96dc3
+[2021-09-17 13:49:14,075] {taskinstance.py:1253} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=trigger_airbyte_dbt_job
+AIRFLOW_CTX_TASK_ID=airbyte_example
+AIRFLOW_CTX_EXECUTION_DATE=2021-09-17T13:48:36.499036+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2021-09-17T13:48:36.499036+00:00
+[2021-09-17 13:49:14,084] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:14,086] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/connections/sync
+[2021-09-17 13:49:14,111] {airbyte.py:77} INFO - Job 4 was submitted to Airbyte Server
+[2021-09-17 13:49:14,112] {airbyte.py:79} INFO - Waiting for job 4 to complete
+[2021-09-17 13:49:17,123] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:17,124] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:20,141] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:20,142] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:23,159] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:23,160] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:26,175] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:26,176] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:29,197] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:29,198] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:32,223] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:32,224] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:35,240] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:35,240] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:38,256] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:38,257] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:41,275] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:41,275] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:44,301] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:44,302] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:47,321] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:47,321] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:50,338] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:50,339] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:53,354] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:53,355] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:56,373] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:56,374] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:49:59,392] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:49:59,392] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:02,409] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:02,410] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:05,424] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:05,425] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:08,441] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:08,441] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:11,457] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:11,458] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:14,474] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:14,474] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:17,489] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:17,490] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:20,504] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:20,504] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:23,517] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:23,518] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:26,531] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:26,531] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:29,547] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:29,548] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:32,563] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:32,563] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:35,579] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:35,580] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:38,594] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:38,594] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:41,611] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:41,612] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:44,628] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:44,629] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:47,646] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:47,647] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:50,665] {base.py:79} INFO - Using connection to: id: airbyte_example. Host: host.docker.internal, Port: 8000, Schema: , Login: None, Password: None, extra: {}
+[2021-09-17 13:50:50,665] {http.py:140} INFO - Sending 'POST' to url: http://host.docker.internal:8000/api/v1/jobs/get
+[2021-09-17 13:50:50,674] {airbyte.py:81} INFO - Job 4 completed successfully
+[2021-09-17 13:50:50,695] {taskinstance.py:1218} INFO - Marking task as SUCCESS. dag_id=trigger_airbyte_dbt_job, task_id=airbyte_example, execution_date=20210917T134836, start_date=20210917T134913, end_date=20210917T135050
+[2021-09-17 13:50:50,737] {local_task_job.py:151} INFO - Task exited with return code 0
+[2021-09-17 13:50:50,756] {local_task_job.py:261} INFO - 0 downstream tasks scheduled from follow-on schedule check
